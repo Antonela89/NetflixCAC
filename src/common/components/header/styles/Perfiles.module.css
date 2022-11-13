@@ -1,0 +1,7 @@
+.perfil{
+    color: white
+}
+
+.perfil:hover{
+    cursor: pointer;
+}

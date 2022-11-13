@@ -1,0 +1,8 @@
+.notificaciones {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.notificaciones:hover{
+    cursor: pointer;
+}
