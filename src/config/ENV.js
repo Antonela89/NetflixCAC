@@ -4,5 +4,6 @@
 
 export const ENV = {
     MODE: process.env.REACT_APP_MODE,
-    TMDB_API_KEY: process.env.REACT_APP_TMDB_API_KEY,
+    TMDB_API_KEY: process.env.REACT_APP_API_KEY
 };
+

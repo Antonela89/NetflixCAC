@@ -11,7 +11,7 @@ import {faVolumeMute} from '@fortawesome/free-solid-svg-icons'
 
 const Banner = ({data}) => {
     return (
-        <BannerContainer color={"red"} image={data?.backdrop}>
+        <BannerContainer image={data?.backdrop}>
             <Image />
             <Type />
             <Title titulo='Encanto'/>

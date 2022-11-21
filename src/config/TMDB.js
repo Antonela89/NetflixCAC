@@ -1,13 +1,16 @@
 //Este archivo lo arma Nico.
 import axios from 'axios';
+import {ENV} from "./ENV" 
+
 
 export const TMDB = {
     api: axios.create({
-        baseURL: 'https://api.themoviedb.org/3',
-        params:{
-            api_key: process.env.TMDB_API_KEY,
-        }, 
-    }), 
+        baseURL: "https://api.themoviedb.org/3",
+        params: {
+            api_key: ENV.TMDB_API_KEY,
+            language: "es-ES",
+        },
+    }),
 
     paths:{
         movies:{
@@ -27,19 +30,19 @@ export const TMDB = {
         poster_low:"https://image.tmdb.org/t/p/w185",
         sizes:{
             poster:{
-                w92:"/w92",
-                w154:"/w154",
-                w185:"/w185",
-                w342:"/w342",
-                w500:"/w500",
-                w780:"/w780",
-                original:"/original",
+                w92:"w92",
+                w154:"w154",
+                w185:"w185",
+                w342:"w342",
+                w500:"w500",
+                w780:"w780",
+                original:"original",
             },
             backdrop: {
-                w300:"/w300",
-                w780:"/w780",
-                w1280:"/w1280",
-                original:"/original",
+                w300:"w300",
+                w780:"w780",
+                w1280:"w1280",
+                original:"original",
             },
         },
     },

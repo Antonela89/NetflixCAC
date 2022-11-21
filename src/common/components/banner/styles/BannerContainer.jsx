@@ -6,15 +6,10 @@ import styled from 'styled-components'; //Forma de importar.
 export const BannerContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
-    background-color: ${(props) => props.color}; //Como background le estoy mandando una imagen, ideal para lo que necesito en el banner del proyecto Netflix.
-
-// Acá arriba declaré un background-color y le mando (a través de un callback) una props llamada color, entonces en mi componente de estilo(BannerContainer), que es un div, ubicado en el componente Banner.jsx, yo le mando el parámetro color con el color('black') que quiero que sea el fondo.
-
+    justify-content: end; 
     height: 90vh;
     width: 100%;
-    background: url( ${(props) => props.image} );
+    background: url(${(props) => props.image} );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +34,6 @@ export const BannerContainer = styled.div`
 `;
 
 BannerContainer.defaultProps = {//Esto indica que si no le mando ningún parámetro de color en el BannerContainer, por defecto le digo que sea blanco, le indico el parámetro inicial que va a tener.
-    color: "black",
     image: "",
 } 
 
@@ -55,3 +49,7 @@ BannerContainer.defaultProps = {//Esto indica que si no le mando ningún paráme
 //     width: 100%;
 //     background-color: ${(props) => props.color}; como parámetro le mando el color(ver en archivo Banner.jsx la etiqueta BannerContainer con la propiedad color).
 // `
+
+//Como background le estoy mandando una imagen, ideal para lo que necesito en el banner del proyecto Netflix.
+
+// Acá arriba declaré un background-color y le mando (a través de un callback) una props llamada color, entonces en mi componente de estilo(BannerContainer), que es un div, ubicado en el componente Banner.jsx, yo le mando el parámetro color con el color('black') que quiero que sea el fondo.
